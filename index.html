@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Duas for Laylatul Qadar | شبِ قدر کی ۱۰۰ دعائیں</title>
+  <meta name="description" content="100 heartfelt duas to ask Allah on Laylatul Qadar — with Urdu translations. Covering forgiveness, family, dunya, akhirah, health, guidance and gratitude.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f0f14;
+      --bg2: #16161e;
+      --bg3: #1e1e2a;
+      --border: rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.14);
+      --text: #f0eeff;
+      --text2: #a09cc0;
+      --text3: #6b6888;
+      --purple: #7F77DD;
+      --purple-dark: #3C3489;
+      --purple-light: #EEEDFE;
+      --accent: #534AB7;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── Stars background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 40%, rgba(255,255,255,0.25) 0%, transparent 100%),
+        radial-gradient(1px 1px at 50% 10%, rgba(255,255,255,0.35) 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 60%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 85% 25%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 20% 70%, rgba(255,255,255,0.2) 0%, transparent 100%),
+        radial-gradient(1px 1px at 60% 85%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 90%, rgba(255,255,255,0.25) 0%, transparent 100%),
+        radial-gradient(1px 1px at 45% 55%, rgba(255,255,255,0.2) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 5%, rgba(255,255,255,0.35) 0%, transparent 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Header ── */
+    .hero {
+      text-align: center;
+      padding: 3.5rem 1rem 2.5rem;
+      position: relative;
+    }
+    .hero-glow {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 500px; height: 300px;
+      background: radial-gradient(ellipse at center, rgba(127,119,221,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .arabic-main {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-size: 2.2rem;
+      color: var(--purple);
+      display: block;
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+    .urdu-subtitle {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-size: 1.1rem;
+      color: var(--text2);
+      display: block;
+      margin-bottom: 1rem;
+      direction: rtl;
+    }
+    .hero h1 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      font-size: 0.95rem;
+      color: var(--text2);
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .hero-divider {
+      width: 60px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--purple), transparent);
+      margin: 1.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    /* ── Special dua box ── */
+    .special-dua {
+      background: var(--bg3);
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      margin: 0 0 2rem;
+      text-align: center;
+    }
+    .special-dua .arabic {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-size: 1.3rem;
+      color: var(--purple);
+      direction: rtl;
+      display: block;
+      margin-bottom: 6px;
+      line-height: 2;
+    }
+    .special-dua .transliteration {
+      font-size: 0.85rem;
+      color: var(--text2);
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+    .special-dua .meaning {
+      font-size: 0.85rem;
+      color: var(--text3);
+    }
+
+    /* ── Filter bar ── */
+    .filter-section {
+      position: sticky;
+      top: 0;
+      background: rgba(15,15,20,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      z-index: 100;
+    }
+    .filter-inner { max-width: 800px; margin: 0 auto; }
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .filter-btn {
+      padding: 5px 13px;
+      border-radius: 20px;
+      border: 1px solid var(--border2);
+      background: transparent;
+      color: var(--text2);
+      font-size: 12px;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all .15s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover { border-color: var(--purple); color: var(--purple); }
+    .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .search-box {
+      width: 100%;
+      padding: 8px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border2);
+      background: var(--bg2);
+      color: var(--text);
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      transition: border-color .15s;
+    }
+    .search-box::placeholder { color: var(--text3); }
+    .search-box:focus { border-color: var(--purple); }
+
+    .counter {
+      font-size: 11px;
+      color: var(--text3);
+      padding: 6px 1rem 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* ── Duas list ── */
+    .duas-list {
+      padding: 1rem 0 3rem;
+    }
+    .dua-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem 1.25rem;
+      margin-bottom: 12px;
+      transition: border-color .15s, transform .1s;
+    }
+    .dua-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-1px);
+    }
+    .dua-top { display: flex; gap: 12px; align-items: flex-start; }
+    .dua-num {
+      min-width: 30px; height: 30px;
+      border-radius: 50%;
+      background: rgba(127,119,221,0.15);
+      color: var(--purple);
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      border: 1px solid rgba(127,119,221,0.25);
+    }
+    .dua-body { flex: 1; min-width: 0; }
+    .dua-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .dua-cat {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      border-radius: 20px;
+    }
+    .cat-forgiveness { background: rgba(217,87,49,0.15); color: #f08060; border: 1px solid rgba(217,87,49,0.25); }
+    .cat-heart       { background: rgba(180,80,120,0.15); color: #e899b8; border: 1px solid rgba(180,80,120,0.25); }
+    .cat-family      { background: rgba(29,158,117,0.15); color: #5ddbb0; border: 1px solid rgba(29,158,117,0.25); }
+    .cat-dunya       { background: rgba(55,138,221,0.15); color: #70b8f4; border: 1px solid rgba(55,138,221,0.25); }
+    .cat-akhirah     { background: rgba(127,119,221,0.18); color: #b0aaf4; border: 1px solid rgba(127,119,221,0.3); }
+    .cat-health      { background: rgba(99,153,34,0.15);  color: #98cc50; border: 1px solid rgba(99,153,34,0.25); }
+    .cat-guidance    { background: rgba(136,135,128,0.15);color: #b4b2a0; border: 1px solid rgba(136,135,128,0.25); }
+    .cat-gratitude   { background: rgba(186,117,23,0.15); color: #f0b845; border: 1px solid rgba(186,117,23,0.25); }
+
+    .dua-label { font-size: 11px; color: var(--text3); font-weight: 500; }
+    .dua-text {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.85;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    .dua-urdu {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 2.4;
+      direction: rtl;
+      text-align: right;
+      background: rgba(83,74,183,0.35);
+      border: 1px solid rgba(127,119,221,0.3);
+      border-radius: 10px;
+      padding: 10px 14px 8px;
+    }
+
+    .empty-state {
+      text-align: center;
+      color: var(--text3);
+      padding: 3rem 1rem;
+      font-size: 14px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--text3);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      position: relative;
+      z-index: 1;
+    }
+    footer span { color: var(--purple); }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .arabic-main { font-size: 1.6rem; }
+      .hero h1 { font-size: 1.2rem; }
+      .dua-text { font-size: 14px; }
+      .dua-urdu { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-glow"></div>
+    <span class="arabic-main">لَيْلَةُ الْقَدْرِ</span>
+    <span class="urdu-subtitle">شبِ قدر کی ۱۰۰ دعائیں</span>
+    <h1>100 Duas for Laylatul Qadar</h1>
+    <p>اللہ ہر سرگوشی سنتا ہے — دل کھول کر مانگو<br>
+    This night is better than a thousand months. Ask everything.</p>
+    <div class="hero-divider"></div>
+  </div>
+
+  <!-- SPECIAL DUA BOX -->
+  <div class="container">
+    <div class="special-dua">
+      <span class="arabic">اللّٰهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي</span>
+      <p class="transliteration">Allahumma innaka 'afuwwun tuhibbul 'afwa fa'fu 'anni</p>
+      <p class="meaning">O Allah, You are the Pardoner, You love to pardon, so pardon me — repeat this all night</p>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-section">
+    <div class="filter-inner">
+      <div class="filter-row">
+        <button class="filter-btn active" onclick="filterCat('all',this)">All 100</button>
+        <button class="filter-btn" onclick="filterCat('forgiveness',this)">Forgiveness / توبہ</button>
+        <button class="filter-btn" onclick="filterCat('heart',this)">Heart / دل</button>
+        <button class="filter-btn" onclick="filterCat('family',this)">Family / خاندان</button>
+        <button class="filter-btn" onclick="filterCat('dunya',this)">Dunya / دنیا</button>
+        <button class="filter-btn" onclick="filterCat('akhirah',this)">Akhirah / آخرت</button>
+        <button class="filter-btn" onclick="filterCat('health',this)">Health / صحت</button>
+        <button class="filter-btn" onclick="filterCat('guidance',this)">Guidance / ہدایت</button>
+        <button class="filter-btn" onclick="filterCat('gratitude',this)">Gratitude / شکر</button>
+      </div>
+      <input class="search-box" id="searchBox" placeholder="Search duas in English or Urdu..." oninput="searchDuas(this.value)">
+    </div>
+  </div>
+  <div class="counter" id="counter">Showing all 100 duas</div>
+
+  <!-- DUAS -->
+  <div class="container">
+    <div class="duas-list" id="duasGrid"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made with <span>♥</span> for Laylatul Qadar &nbsp;·&nbsp; يَا اَللّٰه اقْبَلْ مِنَّا</p>
+    <p style="margin-top:6px;font-size:11px;">O Allah, accept from us &nbsp;·&nbsp; آمین یا رب العالمین</p>
+  </footer>
+
+<script>
+const duas = [
+  {n:1,cat:"forgiveness",label:"Seeking Forgiveness / معافی کی التجا",text:"Ya Allah, I come before You tonight broken, ashamed, and trembling. I have sinned in ways I remember and in ways I have forgotten. I have wronged myself more times than the stars in the sky. Tonight, on this blessed night, I beg You — forgive me. Completely. Leave not a single sin recorded against me.",urdu:"یا اللہ، میں آج رات تیرے سامنے ٹوٹا ہوا، شرمندہ اور کانپتا ہوا حاضر ہوں۔ میں نے جانے انجانے میں ان گنت گناہ کیے ہیں۔ میں نے اپنے آپ پر آسمان کے ستاروں سے بھی زیادہ ظلم کیا ہے۔ آج اس مبارک رات، میں التجا کرتا ہوں — مجھے مکمل طور پر معاف کر دے۔ میرے نامہ اعمال میں ایک گناہ بھی باقی نہ رہنے دے۔"},
+  {n:2,cat:"forgiveness",label:"For Past Sins / گزرے گناہوں کے لیے",text:"O Allah, every sin I committed in secret — the ones no one saw but You — I confess them to You tonight. I am not too proud to admit I was wrong. Wash me, Ya Ghafoor, until my record is whiter than snow. Let this night be the night You erase what I am most ashamed of.",urdu:"اے اللہ، جو گناہ میں نے چھپ کر کیے — جنہیں صرف تو نے دیکھا — آج رات میں وہ سب تیرے سامنے قبول کرتا ہوں۔ مجھے یہ مان لینے میں عار نہیں کہ میں غلط تھا۔ یا غفور، مجھے ایسے دھو دے کہ میرا نامہ اعمال برف سے بھی سفید ہو جائے۔ آج کی رات وہ رات بن جائے جب تو میری سب سے بڑی شرم مٹا دے۔"},
+  {n:3,cat:"forgiveness",label:"For Sins of the Tongue / زبان کے گناہ",text:"Ya Rabb, I have spoken lies. I have backbitten people I called my brothers and sisters. I have hurt others with my words without thinking. Forgive me for every syllable that left my lips in disobedience to You. Seal my mouth henceforth unless I speak goodness.",urdu:"یا رب، میں نے جھوٹ بولا ہے۔ میں نے اپنے بھائیوں اور بہنوں کی غیبت کی ہے۔ میں نے بغیر سوچے اپنی باتوں سے دوسروں کو تکلیف دی ہے۔ میری زبان سے نکلے ہر لفظ جو تیری نافرمانی میں تھا، اسے معاف کر دے۔ آج کے بعد میرے منہ کو بند رکھ جب تک خیر نہ ہو۔"},
+  {n:4,cat:"forgiveness",label:"For Neglected Prayers / غفلت کی نمازیں",text:"Ya Allah, I have been careless with my Salah. There were days I delayed it, days I rushed it without presence, days I abandoned it entirely. Those prayers were a covenant between You and me, and I broke it. Please forgive me and make me among those who guard their prayers with love.",urdu:"یا اللہ، میں نے اپنی نماز میں سستی کی ہے۔ کچھ دن تاخیر سے پڑھی، کچھ دن جلدی جلدی بغیر دھیان کے، اور کچھ دن بالکل چھوڑ دی۔ یہ نماز میرے اور تیرے درمیان عہد تھا، جسے میں نے توڑا۔ مجھے معاف کر اور مجھے ان لوگوں میں شامل کر جو نماز کی محبت سے حفاظت کرتے ہیں۔"},
+  {n:5,cat:"forgiveness",label:"For Arrogance / تکبر",text:"O Allah, I confess there were times I was arrogant — when I thought I was better than others, when I looked down on people, when I forgot that every blessing I have is only from You. Crush the arrogance in my heart tonight and replace it with humility. I am nothing without You.",urdu:"اے اللہ، میں اقرار کرتا ہوں کہ کبھی کبھی مجھ میں تکبر آ گیا — جب میں نے سوچا کہ میں دوسروں سے بہتر ہوں، جب میں نے لوگوں کو حقیر سمجھا، جب میں بھول گیا کہ میری ہر نعمت صرف تیری طرف سے ہے۔ آج رات میرے دل سے تکبر کو توڑ کر تواضع سے بھر دے۔ میں تیرے بغیر کچھ بھی نہیں۔"},
+  {n:6,cat:"forgiveness",label:"For Haram Actions / حرام",text:"Ya Rabb, if I have ever earned what was haram, consumed what was haram, or engaged in what You forbade — knowingly or unknowingly — forgive me tonight. Purify my sustenance. Purify my hands. Let me only reach for what You have made lawful.",urdu:"یا رب، اگر میں نے کبھی حرام کمایا، حرام کھایا، یا جو تو نے منع کیا اس میں ملوث ہوا — جان کر یا انجانے میں — آج رات مجھے معاف کر دے۔ میرے رزق کو پاک کر دے۔ میرے ہاتھوں کو پاک کر دے۔ مجھے صرف اسی کی طرف بڑھنے دے جو تو نے حلال کیا ہے۔"},
+  {n:7,cat:"forgiveness",label:"For Sins Against Others / حقوق العباد",text:"Ya Allah, if I have wronged any person — taken their right, hurt their heart, spoken behind their back — and they have not forgiven me, I beg You: soften their hearts toward me, settle the account between us, and grant us both peace. I cannot make right every wrong, but You can.",urdu:"یا اللہ، اگر میں نے کسی انسان پر ظلم کیا ہو — اس کا حق مارا ہو، اس کے دل کو تکلیف دی ہو — اور اس نے ابھی معاف نہیں کیا، تو التجا ہے: اس کا دل میرے لیے نرم کر دے، ہمارے درمیان حساب چکا دے، اور ہم دونوں کو سکون دے۔"},
+  {n:8,cat:"forgiveness",label:"True Repentance / سچی توبہ",text:"O Allah, let this Tawbah tonight be my greatest Tawbah. Let it be sincere, not just words on my tongue. Let it reach all the way to my soul. And let me never return to what I have repented from. I want to meet You clean — please make me clean.",urdu:"اے اللہ، آج رات کی یہ توبہ میری سب سے بڑی توبہ بن جائے۔ یہ صرف زبانی نہیں بلکہ دل کی گہرائیوں سے ہو۔ یہ میری روح تک پہنچ جائے۔ اور جس چیز سے میں نے توبہ کی ہے اس کی طرف کبھی نہ لوٹوں۔ میں تجھ سے پاک صاف ملنا چاہتا ہوں — مجھے پاک کر دے۔"},
+  {n:9,cat:"forgiveness",label:"For Ingratitude / ناشکری",text:"Ya Ghaffar, I have been ungrateful. You gave me health and I did not thank You. You gave me food and I complained. You gave me life itself and I wasted days. Forgive my ingratitude. I am sorry. I see now how much You have given me and how little I acknowledged it.",urdu:"یا غفار، میں ناشکرا رہا ہوں۔ تو نے صحت دی اور میں نے شکر نہیں کیا۔ تو نے کھانا دیا اور میں نے شکایت کی۔ تو نے زندگی دی اور میں نے دن ضائع کیے۔ یا رب، میری ناشکری کو معاف کر۔ اب مجھے احساس ہو رہا ہے کہ تو نے مجھے کتنا کچھ دیا اور میں نے کتنا کم تسلیم کیا۔"},
+  {n:10,cat:"forgiveness",label:"For Wasted Youth / ضائع اوقات",text:"O Allah, I have wasted years in heedlessness — years that could have been filled with dhikr, with Quran, with service to others. I cannot get those years back. But I can start now. Please forgive me for the time I wasted and bless whatever time I have left.",urdu:"اے اللہ، میں نے برسوں غفلت میں گزارے — وہ سال جو ذکر، قرآن اور دوسروں کی خدمت سے بھرے ہو سکتے تھے۔ وہ سال واپس نہیں آ سکتے۔ لیکن ابھی شروع کر سکتا ہوں۔ میرے ضائع کیے وقت کو معاف کر اور جو وقت باقی ہے اسے بابرکت بنا۔"},
+  {n:11,cat:"forgiveness",label:"For Doubts / شکوک",text:"Ya Allah, there were moments when Shaytan planted doubts in my heart — about You, about Your mercy. Forgive me for every moment I entertained those whispers. I testify now with full certainty: You are Al-Haqq. You are real. You are listening right now.",urdu:"یا اللہ، کچھ لمحے ایسے بھی آئے جب شیطان نے میرے دل میں شک ڈالے — تیرے بارے میں، تیری رحمت کے بارے میں۔ ان وسوسوں پر کان دھرنے کے لیے مجھے معاف کر۔ میں ابھی پورے یقین سے گواہی دیتا ہوں: تو الحق ہے، تو حقیقی ہے، اور تو ابھی سن رہا ہے۔"},
+  {n:12,cat:"forgiveness",label:"For Harming Parents / والدین کو تکلیف",text:"Ya Rabb, forgive me for every time I raised my voice at my parents, every time I made them feel small, every tear I caused them to shed. They gave me everything and I was not always grateful. Forgive me before it is too late.",urdu:"یا رب، ہر اس وقت کے لیے معاف کر جب میں نے والدین پر آواز اٹھائی، ہر اس وقت کے لیے جب انہیں چھوٹا محسوس کرایا، ہر وہ آنسو جو میری وجہ سے ان کی آنکھوں سے گرا۔ انہوں نے مجھے سب کچھ دیا اور میں ہمیشہ شکرگزار نہیں رہا۔"},
+  {n:13,cat:"forgiveness",label:"For Forgotten Sins / بھولے گناہ",text:"O Allah, You know every sin I have committed and forgotten. Forgive me for all of them — the remembered and the forgotten, the small and the great, the hidden and the apparent. Leave nothing against me.",urdu:"اے اللہ، جو گناہ میں نے کیے اور بھول گیا، تو انہیں جانتا ہے۔ انہیں سب کو معاف کر دے — یاد کیے ہوئے اور بھولے ہوئے، چھوٹے اور بڑے، چھپے ہوئے اور ظاہر۔ میرے خلاف کچھ بھی باقی نہ چھوڑ۔"},
+  {n:14,cat:"forgiveness",label:"For Misusing the Senses / حواس",text:"Ya Allah, my eyes have seen what they should not have seen. My ears have heard what they should not have heard. My hands have reached for what they should not have. Forgive every sense I misused in disobedience to You. Guard my gaze from this night forward.",urdu:"یا اللہ، میری آنکھوں نے وہ دیکھا جو انہیں نہیں دیکھنا چاہیے تھا۔ میرے کانوں نے وہ سنا جو انہیں نہیں سننا چاہیے تھا۔ ہر اس حس کو معاف کر جو میں نے تیری نافرمانی میں استعمال کی۔ آج کی رات کے بعد میری نگاہ کی حفاظت کر۔"},
+  {n:15,cat:"forgiveness",label:"Acceptance of Tawbah / توبہ کی قبولیت",text:"O Allah, the Prophet ﷺ told us to ask: Allahumma innaka afuwwun tuhibbul afwa fa'fu anni. Tonight I ask with everything I have — You are Al-Afuw, You love to pardon. So pardon me. I am standing at Your door. Please do not turn me away.",urdu:"اے اللہ، نبی ﷺ نے ہمیں یہ دعا سکھائی: اللّٰهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي۔ آج رات میں پوری جان سے مانگتا ہوں — تو العفو ہے، تو معاف کرنا پسند کرتا ہے۔ مجھے معاف کر دے۔ میں تیرے دروازے پر کھڑا ہوں۔ مجھے خالی ہاتھ واپس نہ کر۔"},
+  {n:16,cat:"heart",label:"For a Soft Heart / نرم دل",text:"Ya Allah, my heart has become hard. I used to cry when I heard Quran — now I feel nothing. I used to feel You near — now I feel distance. Soften my heart, Ya Muqallib Al-Quloob. Break the seal on it. Let me feel again. Let me cry for You again tonight.",urdu:"یا اللہ، میرا دل سخت ہو گیا ہے۔ پہلے قرآن سن کر آنسو آ جاتے تھے — اب کچھ محسوس نہیں ہوتا۔ پہلے تجھے قریب محسوس کرتا تھا — اب فاصلہ لگتا ہے۔ یا مقلب القلوب، میرا دل نرم کر دے۔ اس پر جمی مہر توڑ دے۔ مجھے پھر سے محسوس کرنے دے۔ آج رات پھر تیرے لیے رونے دے۔"},
+  {n:17,cat:"heart",label:"For Inner Peace / قلبی سکون",text:"O Allah, I am exhausted in places no one can see. There is a weight inside me that I carry alone. In the remembrance of Allah do hearts find rest. So let my heart find its rest in You. Take this heaviness from me and replace it with Your sakina.",urdu:"اے اللہ، میں اندر سے تھکا ہوا ہوں جہاں کوئی نہیں دیکھ سکتا۔ میرے اندر ایک بوجھ ہے جو میں اکیلا اٹھائے پھرتا ہوں۔ آگاہ رہو، اللہ کے ذکر سے دل اطمینان پاتے ہیں۔ پس میرے دل کو تجھ میں سکون مل جائے۔ یہ بوجھ مجھ سے لے لے اور اپنی سکینت سے بدل دے۔"},
+  {n:18,cat:"heart",label:"For Sincere Iman / پختہ ایمان",text:"Ya Rabb, give me Iman that does not shake when life gets hard. Iman that is not seasonal. Iman that lives in my bones, that anchors me when everything around me falls apart. Let me die as a true believer.",urdu:"یا رب، مجھے ایسا ایمان دے جو مشکل وقت میں نہ ڈگمگائے۔ ایمان جو موسمی نہ ہو — صرف رمضان تک نہ ہو۔ ایمان جو میری ہڈیوں میں بسے، جو مجھے تھامے جب سب کچھ بکھر رہا ہو۔ مجھے سچے مومن کی موت نصیب ہو۔"},
+  {n:19,cat:"heart",label:"For Ikhlas / اخلاص",text:"O Allah, make my intentions pure. So much of what I do is tainted — I want to be seen, praised, admired. Strip all of that away. Let me do things only for You. Let my deeds reach You light and clean, free from the pollution of riya.",urdu:"اے اللہ، میری نیتوں کو خالص کر دے۔ میں جو بھی کرتا ہوں اس میں کہیں نہ کہیں آلودگی ہے — دکھاوا، تعریف اور توجہ کی چاہت۔ یہ سب چھین لے۔ مجھے صرف تیرے لیے کام کرنے دے۔ میرے اعمال تیرے پاس ہلکے اور پاکیزہ پہنچیں۔"},
+  {n:20,cat:"heart",label:"For Love of Allah / اللہ کی محبت",text:"Ya Allah, I want to love You the way You deserve to be loved. Not the love of obligation — the love of longing. The love that makes me rush to prayer. The love that makes my heart ache when I disobey You. Give me that love, Ya Wadood.",urdu:"یا اللہ، میں تجھ سے اس طرح محبت کرنا چاہتا ہوں جس طرح تو محبت کا مستحق ہے۔ مجبوری کی نہیں بلکہ تڑپ کی محبت۔ وہ محبت جو مجھے نماز کی طرف کھینچ لائے۔ وہ محبت جو میرا دل تکلیف سے بھر دے جب میں تیری نافرمانی کروں۔ یا ودود، وہ محبت مجھے عطا کر۔"},
+  {n:21,cat:"heart",label:"For Love of the Prophet ﷺ / محبتِ رسول",text:"O Allah, fill my heart with love for Your Prophet Muhammad ﷺ. Let him be more beloved to me than my own family and wealth. Let me see him in Jannah. Let his character seep into mine until I am a shadow of his beautiful example.",urdu:"اے اللہ، میرا دل اپنے نبی محمد ﷺ کی محبت سے بھر دے۔ وہ میرے خاندان اور مال سے بھی زیادہ محبوب ہوں۔ مجھے جنت میں ان کا دیدار نصیب ہو۔ ان کا اخلاق میرے اندر سما جائے یہاں تک کہ میں ان کے خوبصورت نمونے کا عکس بن جاؤں۔"},
+  {n:22,cat:"heart",label:"For Contentment / قناعت",text:"Ya Rabb, grant me Qana'ah — contentment with what You have given me. I waste so much of my life wanting more, comparing myself to others. Let me rest in the certainty that what You have given me is exactly what I need right now.",urdu:"یا رب، مجھے قناعت عطا کر — جو تو نے دیا اس پر اطمینان۔ میں اپنی زندگی کا بہت سا حصہ مزید مانگنے اور دوسروں سے موازنہ کرنے میں ضائع کر دیتا ہوں۔ مجھے اس یقین میں سکون مل جائے کہ جو تو نے مجھے دیا ہے وہی مجھے ابھی ضروری ہے۔"},
+  {n:23,cat:"heart",label:"For Fear and Hope / خوف و امید",text:"Ya Allah, keep my heart balanced between Your fear and Your hope. Not so much fear that I lose hope in Your mercy. Not so much hope that I become reckless. Let me walk the straight path, trembling and trusting, all the way to You.",urdu:"یا اللہ، میرے دل کو تیرے خوف اور امید کے درمیان متوازن رکھ۔ اتنا خوف نہیں کہ تیری رحمت سے ناامید ہو جاؤں۔ اتنی امید نہیں کہ لاپروا ہو جاؤں۔ مجھے خوف اور محبت کے درمیان سیدھی راہ پر چلنے دے — لرزتے ہوئے بھی بھروسہ کرتے ہوئے۔"},
+  {n:24,cat:"heart",label:"Protection from Hard Heart / دل کی سختی",text:"O Allah, protect my heart from the things that harden it — excessive laughter, too much of this world, the company of the heedless, sins without remorse. Guard the softness in my chest. Let it always be a place where Your light can enter.",urdu:"اے اللہ، میرے دل کو ان چیزوں سے بچا جو اسے سخت کر دیتی ہیں — حد سے زیادہ ہنسی، دنیاداری، غافلوں کی صحبت۔ میرے سینے کی نرمی کی حفاظت کر۔ یہ ہمیشہ ایسی جگہ رہے جہاں تیرا نور داخل ہو سکے۔"},
+  {n:25,cat:"heart",label:"For Tawakkul / توکل",text:"Ya Allah, teach me to truly rely on You. Not just in words — but in moments of crisis. When the doctors say there is no hope. When the money runs out. When people abandon me. Let me say Hasbunallah and mean every letter of it.",urdu:"یا اللہ، مجھے تجھ پر سچا بھروسہ کرنا سکھا۔ صرف زبانی نہیں — بلکہ بحران کے لمحوں میں جب میری فطرت گھبرانے کی ہو۔ جب ڈاکٹر کہیں کوئی امید نہیں۔ جب پیسے ختم ہو جائیں۔ مجھے حسبنا اللہ کہنے اور اس کے ہر حرف کا دل سے مطلب سمجھنے دے۔"},
+  {n:26,cat:"family",label:"For Parents / والدین",text:"Ya Allah, have mercy on my parents the way they had mercy on me when I was small. If they are alive — give them health, happiness, and the best of this life and the next. If they have passed — flood their graves with light and grant them Al-Firdaws.",urdu:"یا اللہ، میرے والدین پر ویسی رحمت فرما جیسی انہوں نے مجھ پر کی جب میں چھوٹا تھا۔ اگر وہ زندہ ہیں — انہیں صحت، خوشی اور اس دنیا و آخرت کی بہترین نعمتیں دے۔ اگر وہ گزر گئے — ان کی قبروں کو نور سے بھر دے اور انہیں الفردوس عطا کر۔"},
+  {n:27,cat:"family",label:"For a Righteous Spouse / نیک ساتھی",text:"O Allah, grant me a spouse who will be the coolness of my eyes. One who will remind me of You when I forget, who will walk this deen with me, whose companionship will be a mercy for me in this world and the next.",urdu:"اے اللہ، مجھے ایسا جیون ساتھی عطا کر جو میری آنکھوں کی ٹھنڈک ہو۔ جو مجھے تیری یاد دلائے جب میں بھول جاؤں، جو میرے ساتھ اس دین کی راہ پر چلے، جس کی رفاقت اس دنیا اور آخرت میں میرے لیے رحمت ہو۔"},
+  {n:28,cat:"family",label:"For My Spouse / شریک حیات",text:"Ya Rabb, bless my marriage. Remove the misunderstandings between us. Bring our hearts closer. Make our home a place of love, laughter, and Your dhikr. Let us be the righteous pair who enter Jannah holding hands.",urdu:"یا رب، میری شادی میں برکت دے۔ ہمارے درمیان کی غلط فہمیاں دور کر۔ ہمارے دلوں کو قریب کر۔ ہمارا گھر محبت، ہنسی اور تیرے ذکر سے بھرا ہو۔ ہمیں وہ نیک جوڑا بنا جو ہاتھ تھامے ہوئے جنت میں داخل ہو۔"},
+  {n:29,cat:"family",label:"For Righteous Children / نیک اولاد",text:"Ya Allah, grant me righteous children — children who pray, who love You, who carry this deen forward after I am gone. Protect them from every harm. Guide them before they go astray.",urdu:"یا اللہ، مجھے نیک اولاد عطا کر — بچے جو نماز پڑھیں، جو تجھ سے محبت کریں، جو میرے جانے کے بعد اس دین کو آگے بڑھائیں۔ انہیں ہر نقصان سے بچا۔ انہیں گمراہ ہونے سے پہلے راہ دکھا۔"},
+  {n:30,cat:"family",label:"For Those Without Children / اولاد سے محروم",text:"O Allah, You gave Zakariyya (AS) a child when all hope was gone. Nothing is too big for You. If it is in my qadar, grant me children. And if not, fill that space in my heart with something beautiful from You.",urdu:"اے اللہ، تو نے زکریا علیہ السلام کو بڑھاپے میں اولاد دی جب سب امید ختم ہو گئی تھی۔ تیرے لیے کچھ بھی بڑا نہیں۔ اگر میری تقدیر میں ہے تو مجھے اولاد دے۔ اور اگر نہیں تو میرے دل کی اس خالی جگہ کو اپنی طرف سے کسی خوبصورت چیز سے بھر دے۔"},
+  {n:31,cat:"family",label:"For Family Unity / خاندانی اتحاد",text:"Ya Rabb, heal the broken relationships in my family. The siblings who do not speak. The parent and child who live under the same roof like strangers. Mend what has been torn. Soften the hearts that have grown cold.",urdu:"یا رب، میرے خاندان کے ٹوٹے رشتوں کو ٹھیک کر دے۔ وہ بہن بھائی جو بات نہیں کرتے۔ وہ ماں باپ اور بچے جو ایک ہی چھت تلے اجنبیوں کی طرح رہتے ہیں۔ جو ٹوٹا ہے اسے جوڑ دے۔ جو دل ٹھنڈے پڑ گئے ہیں انہیں ایک دوسرے کے لیے نرم کر دے۔"},
+  {n:32,cat:"family",label:"For My Mother / ماں",text:"O Allah, tonight I think of my mother — everything she sacrificed, every prayer she whispered for me. Reward her in ways she cannot even imagine. If she has passed — be so generous to her soul that she smiles. She deserves it.",urdu:"اے اللہ، آج رات میں اپنی ماں کے بارے میں سوچ رہا ہوں — اس کی ہر قربانی، ہر وہ دعا جو اس نے میرے لیے چپکے سے مانگی۔ اسے ایسا صلہ دے جس کا اسے گمان بھی نہ ہو۔ اگر وہ گزر گئی ہے، اس کی روح سے اتنی سخاوت کر کہ وہ مسکرا اٹھے۔"},
+  {n:33,cat:"family",label:"For My Father / باپ",text:"Ya Allah, my father carried this family in ways I did not always appreciate. He worked and worried and stayed silent through his own pain. Have mercy on him. Forgive him as he forgave me. Let him be at peace.",urdu:"یا اللہ، میرے باپ نے اس خاندان کا بوجھ ایسے اٹھایا جس کی قدر میں نے ہمیشہ نہیں کی۔ وہ کام کرتا رہا، فکر کرتا رہا، اپنے درد پر خاموش رہا۔ اس پر رحم فرما۔ اس کی کمزوریوں کو ویسے معاف کر جیسے اس نے میری معاف کیں۔ اسے سکون نصیب ہو۔"},
+  {n:34,cat:"family",label:"For Deceased Loved Ones / فوت شدگان",text:"O Allah, those I have loved who have left this world — shower them with Your mercy tonight of all nights. Let my duas for them count more than all the years combined. Let them be at rest, Ya Arham Ar-Rahimeen.",urdu:"اے اللہ، جن سے میں نے محبت کی اور جو اس دنیا کو چھوڑ گئے — آج رات انہیں اپنی رحمت سے نہلا دے۔ ان کے لیے میری آج رات کی دعائیں سارے سالوں سے زیادہ قیمتی ہو جائیں۔ یا ارحم الراحمین، انہیں آرام میں رکھ۔"},
+  {n:35,cat:"family",label:"Protection of Family / خاندان کی حفاظت",text:"Ya Rabb, place Your protection around my family like a fortress. Protect them from accidents, illness, and people who wish them harm. Wherever they go tonight, let Your angels surround them.",urdu:"یا رب، میرے خاندان کے گرد اپنی حفاظت کو قلعے کی طرح کھڑا کر دے۔ انہیں حادثوں سے، بیماری سے، برا چاہنے والوں سے محفوظ رکھ۔ وہ آج رات جہاں بھی ہوں، تیرے فرشتے انہیں گھیرے ہوئے ہوں۔"},
+  {n:36,cat:"family",label:"Family Together in Jannah / جنت میں اکٹھے",text:"O Allah, I do not want Jannah alone. I want to walk through its gates with my family. Every one of them. Grant hidayah to those far from the deen. Gather us all in Jannat Al-Firdaws.",urdu:"اے اللہ، میں جنت میں اکیلا نہیں جانا چاہتا۔ میں اپنے خاندان کو ساتھ لے کر اس کے دروازوں سے گزرنا چاہتا ہوں۔ ہر ایک کو۔ جو دین سے دور ہیں انہیں ہدایت عطا کر۔ ہمیں سب کو جنت الفردوس میں اکٹھا کر۔"},
+  {n:37,cat:"family",label:"For Future Generations / آنے والی نسلیں",text:"Ya Allah, bless my children's children even if I never meet them. Build a legacy of righteousness in my bloodline for generations. Let the trees I plant in this life give shade to people who will never know my name.",urdu:"یا اللہ، میرے بچوں کے بچوں کو برکت دے چاہے میں انہیں ملوں یا نہ۔ میرے خاندان میں نیکی کا ایسا سلسلہ قائم کر جو نسلوں تک تیرا نام آگے لے جائے۔ اس زندگی میں جو درخت میں لگاؤں وہ ایسے لوگوں کو سایہ دیں جو میرا نام بھی نہیں جانتے۔"},
+  {n:38,cat:"dunya",label:"For Rizq / رزق",text:"Ya Razzaq, send me rizq from directions I cannot expect. Halal, clean, and blessed. Rizq that is enough for my needs and more to give away. Let me never beg from anyone but You.",urdu:"یا رزاق، مجھے ایسی سمتوں سے رزق بھیج جن کا میں سوچ بھی نہ سکوں۔ حلال رزق — پاک اور بابرکت۔ ایسا رزق جو میری ضروریات پوری کرے اور صدقہ دینے کے لیے بھی بچے۔ مجھے کبھی تیرے سوا کسی کے سامنے ہاتھ نہ پھیلانا پڑے۔"},
+  {n:39,cat:"dunya",label:"For Relief from Debt / قرض سے نجات",text:"O Allah, I am crushed under the weight of debt. It keeps me awake at night. Ya Rabb, nothing is too big for You. Open for me a way out that I cannot see right now. Grant me ease.",urdu:"اے اللہ، میں قرض کے بوجھ تلے دبا ہوا ہوں۔ یہ مجھے رات کو سونے نہیں دیتا۔ تیرے لیے کچھ بھی بڑا نہیں۔ میرے لیے ایسا راستہ کھول جو مجھے ابھی نظر نہیں آ رہا۔ مجھے آسانی عطا کر۔"},
+  {n:40,cat:"dunya",label:"For Employment / روزگار",text:"Ya Allah, I need work that is halal, dignified, and enough. Open doors for me tonight. Place me in a job that benefits me and through which I benefit others. Make my daily work a form of worship.",urdu:"یا اللہ، مجھے ایسا کام چاہیے جو حلال ہو، باعزت ہو اور کافی ہو۔ آج رات میرے لیے دروازے کھول دے۔ مجھے ایسے کام میں لگا دے جو میرے لیے فائدہ مند ہو اور جس سے میں دوسروں کو فائدہ پہنچاؤں۔ میرا روزمرہ کا کام عبادت بن جائے۔"},
+  {n:41,cat:"dunya",label:"For Success in Studies / تعلیم میں کامیابی",text:"Ya Rabb, grant me success in what I am working toward. Bless my efforts and fill the gaps my ability cannot reach.",urdu:"یا رب، جو میں حاصل کرنے کی کوشش کر رہا ہوں اس میں مجھے کامیابی دے۔ میری محنت کو بابرکت بنا اور جہاں میری صلاحیت نہیں پہنچتی وہاں تو پہنچ جا۔"},
+  {n:42,cat:"dunya",label:"For Barakah in Time / وقت میں برکت",text:"O Allah, put barakah in my time. Let me get more done in less time. Let the hours stretch for what is good and shrink for what is wasteful. Twenty-four hours is enough when You bless it.",urdu:"اے اللہ، میرے وقت میں برکت ڈال دے۔ کم وقت میں زیادہ کام ہو جائے۔ نیک کاموں کے لیے دن کے گھنٹے پھیل جائیں اور فضول کاموں کے لیے سکڑ جائیں۔ جب تو برکت دے تو چوبیس گھنٹے کافی ہیں۔"},
+  {n:43,cat:"dunya",label:"For a Blessed Home / بابرکت گھر",text:"Ya Allah, bless the roof over my head. Make it a house full of Your dhikr, full of peace, full of warmth. Let the angels feel welcome. Keep the Shaytan far from its walls.",urdu:"یا اللہ، میرے سر پر جو چھت ہے اسے بابرکت کر دے۔ اسے تیرے ذکر سے، سکون سے، گرمجوشی سے بھر دے۔ فرشتے اس میں خوش آمدید محسوس کریں۔ شیطان کو اس کی دیواروں سے دور رکھ۔"},
+  {n:44,cat:"dunya",label:"For Safety in Travel / سفر میں سلامتی",text:"O Allah, protect me on every journey. Every road I drive, every flight I take. You are Al-Hafiz. Let Your protection walk beside me wherever I go.",urdu:"اے اللہ، ہر سفر میں مجھے محفوظ رکھ۔ ہر سڑک جس پر گاڑی چلاؤں، ہر پرواز جو لوں۔ تو الحفیظ ہے۔ جہاں بھی جاؤں تیری حفاظت میرے ساتھ چلتی رہے۔"},
+  {n:45,cat:"dunya",label:"For Protection from Enemies / دشمنوں سے حفاظت",text:"Ya Rabb, if there are people who wish me harm — be my defender. I do not ask You to harm them. I ask You to protect me. Be my shield, Ya Qawiyy.",urdu:"یا رب، اگر ایسے لوگ ہیں جو مجھے نقصان پہنچانا چاہتے ہیں — تو میرا محافظ بن جا۔ میں نہیں چاہتا کہ تو انہیں نقصان پہنچائے۔ میں چاہتا ہوں کہ تو مجھے بچائے۔ یا قوی، میری ڈھال بن جا۔"},
+  {n:46,cat:"dunya",label:"For Good Friends / اچھے دوست",text:"O Allah, surround me with friends who bring me closer to You. Friends who remind me to pray and speak truth even when it hurts. Remove those whose company takes me further from You.",urdu:"اے اللہ، مجھے ایسے دوستوں سے گھیر لے جو مجھے تیرے قریب کریں۔ دوست جو مجھے نماز یاد دلائیں، جو تکلیف دہ ہو تب بھی سچ بولیں۔ میری زندگی سے ان لوگوں کو دور کر دے جن کی صحبت مجھے تجھ سے دور لے جائے۔"},
+  {n:47,cat:"dunya",label:"For Freedom from Oppression / ظلم سے نجات",text:"Ya Muntaqim, I have been wronged. I have no one to go to but You. You see what they did. Take my case, Ya Rabb. Let justice come — in this life or before Your throne.",urdu:"یا منتقم، مجھ پر ظلم ہوا ہے۔ میرے پاس تیرے سوا کوئی جانے کی جگہ نہیں۔ تو دیکھتا ہے انہوں نے کیا کیا۔ یا رب، میرا مقدمہ اپنے ہاتھ میں لے لے۔ انصاف آئے — اس دنیا میں یا تیرے عرش کے سامنے۔"},
+  {n:48,cat:"dunya",label:"For Relief from Anxiety / پریشانی",text:"O Allah, I live with a constant undercurrent of worry. I hand this anxiety to You tonight. Take it from me and replace it with trust in Your plan.",urdu:"اے اللہ، میں مسلسل فکر کے سائے میں جیتا ہوں۔ آج رات میں یہ پریشانی تجھے سونپتا ہوں۔ اسے مجھ سے لے لے اور تیرے منصوبے پر بھروسے سے بدل دے۔"},
+  {n:49,cat:"dunya",label:"For Relief from Hardship / مشکل سے نجات",text:"Ya Allah, after every hardship comes ease — You promised this twice. I am in the hardship right now. I am waiting for the ease. Bring it soon. I am tired and I need Your relief.",urdu:"یا اللہ، ہر مشکل کے بعد آسانی آتی ہے — تو نے یہ وعدہ سورۃ الشرح میں دو بار کیا۔ میں ابھی مشکل میں ہوں۔ آسانی کا انتظار کر رہا ہوں۔ جلد لے آ۔ میں تھک گیا ہوں اور مجھے تیری راحت چاہیے۔"},
+  {n:50,cat:"dunya",label:"For Blessed Business / کاروبار میں برکت",text:"Ya Razzaq, bless my business. Remove the difficulties. Let my halal work become a source of sadaqah and employment for others.",urdu:"یا رزاق، میرے کاروبار میں برکت دے۔ جو رکاوٹیں اسے سست کر رہی ہیں انہیں دور کر۔ میرا حلال کاروبار صدقے اور دوسروں کے لیے روزگار کا ذریعہ بن جائے۔"},
+  {n:51,cat:"dunya",label:"For Good Reputation / عزت",text:"O Allah, protect my honor. Do not allow those who hate me to succeed in destroying what I have built. And if I have done something to deserve shame — let me fix it privately.",urdu:"اے اللہ، میری عزت کی حفاظت کر۔ جو مجھ سے نفرت کرتے ہیں انہیں میری ساکھ تباہ کرنے میں کامیاب نہ ہونے دے۔ اور اگر میں نے کچھ ایسا کیا ہے جو شرمندگی کا مستحق ہے — مجھے اسے خاموشی سے ٹھیک کرنے دے۔"},
+  {n:52,cat:"dunya",label:"For Resolution of Problems / مسائل کا حل",text:"Ya Rabb, the problems I face feel like mountains. But You move mountains — You parted seas — You turned fire into coolness for Ibrahim (AS). Show me a way, Ya Fattah.",urdu:"یا رب، جن مسائل کا میں سامنا کر رہا ہوں وہ پہاڑوں جیسے لگتے ہیں۔ لیکن تو پہاڑ ہلاتا ہے — تو نے سمندر چیرا — تو نے ابراہیم علیہ السلام کے لیے آگ کو ٹھنڈا کر دیا۔ یا فتاح، مجھے راستہ دکھا۔"},
+  {n:53,cat:"dunya",label:"For Lands in Turmoil / مظلوم سرزمینیں",text:"O Allah, for the lands where there is war, where children are dying — intervene tonight. This is Laylatul Qadar. Write peace for those people. Write an end to their suffering.",urdu:"اے اللہ، جن سرزمینوں پر جنگ ہے، جہاں بچے مر رہے ہیں — آج رات مداخلت فرما۔ یہ لیلۃ القدر ہے۔ ان لوگوں کے لیے امن لکھ دے۔ ان کی تکلیف کا خاتمہ لکھ دے۔"},
+  {n:54,cat:"dunya",label:"For the Muslim Ummah / امت مسلمہ",text:"Ya Allah, the Ummah of Muhammad ﷺ is suffering. We are divided and weak. Restore our dignity. Send us righteous leaders. Let this Ummah rise again in service to You and humanity.",urdu:"یا اللہ، محمد ﷺ کی امت تکلیف میں ہے۔ ہم منقسم، کمزور اور ذلیل ہیں۔ ہماری عزت واپس دے۔ ہمیں صالح قائدین بھیج۔ یہ امت پھر اٹھ کھڑی ہو تیری اور انسانیت کی خدمت میں۔"},
+  {n:55,cat:"dunya",label:"For Acceptance of Deeds / اعمال کی قبولیت",text:"O Allah, accept every prayer, every fast, every tarawih night, every page of Quran this Ramadan. I know my deeds are flawed — but You are Al-Kareem. Accept what little I offered and multiply it.",urdu:"اے اللہ، اس رمضان میری ہر نماز، ہر روزہ، ہر تراویح کی رات، قرآن کا ہر صفحہ — قبول فرما لے۔ میں جانتا ہوں میرے اعمال میں خامیاں ہیں — لیکن تو الکریم ہے۔ جو تھوڑا سا میں نے پیش کیا اسے قبول فرما اور اپنی سخاوت سے بڑھا دے۔"},
+  {n:56,cat:"akhirah",label:"For a Good Death / حسن خاتمہ",text:"Ya Allah, when my time comes — let me die in a state of Iman. Let the last words on my tongue be the Shahada. Let the Angel of Death be gentle with me. Let the last thing I feel be peace knowing I am going to You.",urdu:"یا اللہ، جب میرا وقت آئے — مجھے ایمان کی حالت میں موت دے۔ میری زبان پر آخری الفاظ کلمہ شہادت ہوں۔ ملک الموت میرے ساتھ نرمی کرے۔ اس دنیا میں آخری چیز جو میں محسوس کروں وہ یہ اطمینان ہو کہ میں تیرے پاس جا رہا ہوں۔"},
+  {n:57,cat:"akhirah",label:"For the Grave / قبر",text:"O Allah, expand my grave and fill it with light. Make it a garden from the gardens of Paradise. Protect me from the punishment of the grave.",urdu:"اے اللہ، میری قبر کو کشادہ کر اور اسے نور سے بھر دے۔ اسے جنت کے باغوں میں سے ایک باغ بنا دے۔ مجھے عذاب قبر سے بچا۔ میری روح کو سکون سے آرام کرنے دے۔"},
+  {n:58,cat:"akhirah",label:"For the Day of Judgment / روز محشر",text:"Ya Rabb, on the Day when the sun is brought near — let me be in Your shade. I have no good deeds great enough to stand on my own. Let Your mercy be my only argument.",urdu:"یا رب، اس دن جب سورج قریب کر لایا جائے گا — مجھے اپنے سائے میں رکھ۔ میرے پاس اتنی نیکیاں نہیں کہ اکیلے کھڑا ہو سکوں۔ اس دن تیری رحمت ہی میری واحد دلیل ہو۔"},
+  {n:59,cat:"akhirah",label:"For a Light Record / ہلکا نامہ",text:"O Allah, place my Book of Deeds in my right hand. Let it be full of good I barely remember and empty of sins You already erased. Let me read it and weep tears of joy.",urdu:"اے اللہ، میرا نامہ اعمال میرے دائیں ہاتھ میں دے۔ ایسی نیکیوں سے بھرا ہو جنہیں کرنا مجھے بھی یاد نہیں، ایسے گناہوں سے خالی جو تو مٹا چکا ہو۔ اسے پڑھ کر خوشی کے آنسو بہاؤں۔"},
+  {n:60,cat:"akhirah",label:"For Crossing the Sirat / پل صراط",text:"Ya Allah, let me cross the bridge over Hellfire like a flash of lightning. Fast, painless, safe. Don't let my foot slip. Pull me to the other side.",urdu:"یا اللہ، مجھے جہنم کے اوپر والا پل بجلی کی چمک کی طرح پار کرنے دے۔ تیز، بے تکلیف، محفوظ۔ میرا قدم نہ پھسلے۔ مجھے دوسری طرف کھینچ لے۔"},
+  {n:61,cat:"akhirah",label:"Safety from Hellfire / دوزخ سے پناہ",text:"O Allah, I am terrified of the Fire — not just the heat, but the separation from You. Save me from it. I need Your pardon.",urdu:"اے اللہ، میں آگ سے ڈرتا ہوں — صرف اس کی گرمی سے نہیں بلکہ تجھ سے جدائی سے۔ مجھے اس سے بچا۔ میں اس کا سامنا کرنے کی ہمت نہیں رکھتا۔ مجھے تیری معافی چاہیے۔"},
+  {n:62,cat:"akhirah",label:"For Al-Firdaws / الفردوس",text:"Ya Allah, make Al-Firdaws — the highest level of Paradise — my home. Let me see Your face. That is the greatest joy I can imagine. Make it mine.",urdu:"یا اللہ، الفردوس — جنت کا سب سے اونچا درجہ — میرا گھر بنا دے۔ مجھے تیرا دیدار نصیب ہو۔ یہی سب سے بڑی خوشی ہے جس کا میں تصور کر سکتا ہوں۔ اسے میرا بنا دے۔"},
+  {n:63,cat:"akhirah",label:"For the Prophet's Intercession / شفاعت ﷺ",text:"O Allah, grant me the shafa'ah of Your Prophet Muhammad ﷺ. Let him recognize me as one of his Ummah. Let me drink from the Hawd and never thirst again.",urdu:"اے اللہ، روز قیامت مجھے اپنے نبی محمد ﷺ کی شفاعت نصیب کر۔ وہ مجھے دیکھیں اور اپنی امت میں سے پہچانیں۔ حوض کوثر پر وہ میری طرف ہاتھ بڑھائیں۔ میں اس سے پیؤں اور پھر کبھی پیاسا نہ ہوں۔"},
+  {n:64,cat:"akhirah",label:"For Husn Al-Khatimah / حسن خاتمہ",text:"Ya Rabb, let my ending be beautiful. No matter what my life has been — let the final chapter be the best one. Let the last thing recorded in my book make You smile.",urdu:"یا رب، میرا انجام خوبصورت ہو۔ چاہے میری زندگی کچھ بھی رہی ہو — آخری باب سب سے بہترین ہو۔ میرے نامے میں آخری جو چیز لکھی جائے وہ ایسی ہو جو تجھے خوش کر دے۔"},
+  {n:65,cat:"akhirah",label:"Protection from Dajjal / دجال سے پناہ",text:"O Allah, protect me and my family from the Fitnah of Dajjal. Give me strength to see through his deceptions. And if I die before he comes — grant me a death that saves me from facing that trial.",urdu:"اے اللہ، مجھے اور میرے خاندان کو دجال کے فتنے سے بچا۔ مجھے اس کے فریبوں کو پہچاننے کی طاقت دے۔ اور اگر میں پہلے مر جاؤں — مجھے ایسی موت دے جو مجھے کبھی اس فتنے کا سامنا کرنے سے بچا لے۔"},
+  {n:66,cat:"akhirah",label:"Neighbors in Jannah / جنت میں ساتھ",text:"O Allah, let the people I love in this world be my neighbors in Jannah. Let us sit together in those eternal gardens, grateful for every moment that led us there.",urdu:"اے اللہ، جن سے میں اس دنیا میں محبت کرتا ہوں انہیں جنت میں میرا ہمسایہ بنا دے۔ ہم ان ابدی باغوں میں اکٹھے بیٹھیں، ہر اس لمحے کے لیے شکرگزار جو ہمیں وہاں لے آیا۔"},
+  {n:67,cat:"akhirah",label:"Heavy Scales / بھاری میزان",text:"O Allah, make my Mizan heavy with goodness. And if my good deeds are not enough — let Your mercy make up the difference. That is all I am counting on.",urdu:"اے اللہ، میری میزان کو نیکیوں سے بھاری کر دے۔ اور اگر میری نیکیاں کافی نہ ہوں تو تیری رحمت فرق پورا کر دے۔ میرا سارا انحصار اسی پر ہے۔"},
+  {n:68,cat:"akhirah",label:"Company of the Prophets / انبیاء کی رفاقت",text:"Ya Rabb, let me be in the company of the Prophets, the Siddiqeen, the Shuhada, and the Salihin. When I enter Jannah, let me find Muhammad ﷺ waiting.",urdu:"یا رب، مجھے انبیاء، صدیقین، شہداء اور صالحین کی صحبت نصیب ہو۔ جب جنت میں داخل ہوں تو محمد ﷺ کو انتظار میں پاؤں۔"},
+  {n:69,cat:"health",label:"For Shifa / شفاء",text:"Ya Shafi, there is an illness in this body that only You can cure. I ask You by Your name Al-Shafi — grant me complete shifa. Not partial — complete. Restore my body to the health You created it in.",urdu:"یا شافی، اس جسم میں ایک بیماری ہے جسے صرف تو ٹھیک کر سکتا ہے۔ تیرے نام الشافی سے مانگتا ہوں — مجھے مکمل شفاء دے۔ جزوی نہیں — مکمل۔ میرے جسم کو اس صحت پر واپس لا دے جس میں تو نے اسے بنایا تھا۔"},
+  {n:70,cat:"health",label:"For Mental Health / ذہنی صحت",text:"O Allah, there are people tonight hurting inside their minds. The depression that feels endless. The anxiety that suffocates. Ya Allah — heal every one of them tonight.",urdu:"اے اللہ، آج رات کچھ لوگ اندر سے تکلیف میں ہیں۔ وہ ڈپریشن جو انہیں محسوس کراتا ہے کہ اندھیرا کبھی نہیں ہٹے گا۔ وہ پریشانی جو گھٹن پیدا کرتی ہے۔ یا اللہ — آج رات ان سب کو شفاء دے۔"},
+  {n:71,cat:"health",label:"For a Sick Loved One / عزیز کی شفاء",text:"Ya Rabb, the person I love is suffering right now. You are Al-Qadir over every cell in their body. Command it to heal. Restore them to health and let them live long enough to thank You.",urdu:"یا رب، جس سے میں محبت کرتا ہوں وہ ابھی تکلیف میں ہے۔ تو ان کے جسم کے ہر خلیے پر قادر ہے۔ اسے حکم دے کہ ٹھیک ہو جائے۔ انہیں صحت دے اور اتنا جینے دے کہ تیرا شکر ادا کر سکیں۔"},
+  {n:72,cat:"health",label:"Strength in Illness / بیماری میں صبر",text:"O Allah, if You do not remove this illness — give me the strength to carry it with patience and iman. Let it be a purification for me, a kaffarah for my sins. Let me bear it with tawakkul.",urdu:"اے اللہ، اگر تو یہ بیماری نہیں ہٹاتا — تو مجھے اسے صبر اور ایمان کے ساتھ اٹھانے کی طاقت دے۔ یہ بیماری میری پاکیزگی بن جائے، میرے گناہوں کا کفارہ۔ مجھے اسے صرف توکل کے ساتھ برداشت کرنے دے۔"},
+  {n:73,cat:"health",label:"For Sound Mind / ذہن کی سلامتی",text:"Ya Allah, protect my mind. Let me grow old with my memory and reasoning intact. And if You take my mind — grant me mercy in that state, and reward those who care for me.",urdu:"یا اللہ، میرے ذہن کی حفاظت کر۔ مجھے بڑھاپے میں بھی یادداشت اور سوچنے کی صلاحیت سلامت رکھ۔ اور اگر لے جائے — تو اس حال میں بھی مجھ پر رحم فرما، اور جو میری دیکھ بھال کریں انہیں بے حساب اجر دے۔"},
+  {n:74,cat:"health",label:"Protection from Disease / بیماری سے بچاؤ",text:"O Allah, protect me and my family from every illness. Help me take care of this body as an amanah. And when disease comes despite every precaution, let Your mercy be the cure.",urdu:"اے اللہ، مجھے اور میرے خاندان کو ہر بیماری سے بچا۔ اس جسم کی دیکھ بھال میں میری مدد کر جو تو نے امانت کے طور پر دیا۔ اور ہر احتیاط کے باوجود بیماری آئے تو تیری رحمت علاج بن جائے۔"},
+  {n:75,cat:"health",label:"Freedom from Addiction / بری عادتیں",text:"Ya Allah, I am struggling with something that has a grip on me. I try to stop and I fail again and again. You are Al-Qawiyy. Give me Your strength. Break these chains tonight. Free me.",urdu:"یا اللہ، میں کسی ایسی چیز سے لڑ رہا ہوں جس نے مجھے جکڑا ہوا ہے۔ رکنے کی کوشش کرتا ہوں اور ناکام ہو جاتا ہوں۔ تو القوی ہے۔ اپنی طاقت مجھے دے کیونکہ میری کافی نہیں۔ آج رات یہ زنجیریں مجھ سے اتار پھینک۔ مجھے آزاد کر دے۔"},
+  {n:76,cat:"health",label:"For Those with Disabilities / معذور افراد",text:"O Allah, reward those who live with disabilities beyond imagination. Make their daily challenges a source of the highest rewards. Soften the hearts of everyone around them.",urdu:"اے اللہ، معذوری کے ساتھ زندگی گزارنے والوں کو تصور سے پرے اجر عطا کر۔ جو چیلنجز وہ ہر روز اٹھاتے ہیں انہیں سب سے اونچے اجر کا ذریعہ بنا دے۔ ان کے آس پاس سب کے دلوں کو نرم کر۔"},
+  {n:77,cat:"health",label:"Long Life in Obedience / اطاعت میں عمر",text:"Ya Allah, grant me a long life — but only if a long life is good for me. Grant me longevity in obedience. Let every extra year add to my good deeds, not subtract.",urdu:"یا اللہ، مجھے لمبی عمر عطا کر — لیکن صرف تبھی جب لمبی عمر میرے لیے اچھی ہو۔ مجھے تیری اطاعت میں عمر دراز کر۔ ہر اضافی سال میرے نیک اعمال میں اضافہ کرے، کمی نہیں۔"},
+  {n:78,cat:"guidance",label:"For Hidayah / ہدایت",text:"Ya Hadi, guide every person wandering away from You tonight. The ones who used to pray and stopped. You guided me once when I did not deserve it — guide them too.",urdu:"یا ہادی، ہر اس شخص کو ہدایت دے جو آج رات تجھ سے بھٹک رہا ہے۔ وہ جو نماز پڑھتے تھے اور چھوڑ دی۔ تو نے مجھے ایک بار ہدایت دی جب میں مستحق نہیں تھا — انہیں بھی دے۔ تیرے لیے کوئی اتنا دور نہیں۔"},
+  {n:79,cat:"guidance",label:"Firmness on the Path / استقامت",text:"O Allah, hold my feet firmly on the Sirat Al-Mustaqeem. Let nothing and no one drag me off this path. Not success, not failure, not love, not grief.",urdu:"اے اللہ، میرے پاؤں کو صراط مستقیم پر مضبوطی سے جمائے رکھ۔ کوئی شے اور کوئی شخص مجھے اس راستے سے نہ کھینچ سکے۔ نہ کامیابی، نہ ناکامی، نہ محبت، نہ غم۔"},
+  {n:80,cat:"guidance",label:"For Quran as Companion / قرآن کی رفاقت",text:"Ya Rabb, make the Quran the companion of my heart. Help me understand it and live it. Let its verses come to my mind when I need them most. Let it be my guide.",urdu:"یا رب، قرآن کو میرے دل کا ساتھی بنا دے۔ مجھے اسے سمجھنے اور جینے میں مدد کر۔ جب سب سے زیادہ ضرورت ہو اس کی آیتیں میرے ذہن میں آئیں۔ یہ میری رہنمائی بن جائے۔"},
+  {n:81,cat:"guidance",label:"For Islamic Knowledge / علم دین",text:"O Allah, increase me in knowledge — true knowledge that humbles me before You. Grant me sincere scholars. Remove those who would mislead me in the name of religion.",urdu:"اے اللہ، مجھے علم میں اضافہ کر — سچا علم، مفید علم، ایسا علم جو مجھے تیرے سامنے جھکا دے۔ مجھے مخلص علماء نصیب کر۔ جو دین کے نام پر مجھے گمراہ کریں انہیں میرے راستے سے ہٹا دے۔"},
+  {n:82,cat:"guidance",label:"Wisdom in Decisions / فیصلوں میں حکمت",text:"Ya Allah, guide me in the decisions I face. If something is good for me — make it easy. If it is bad — take it away even if I am desperately reaching for it.",urdu:"یا اللہ، میرے سامنے جو فیصلے ہیں ان میں میری رہنمائی فرما۔ اگر کوئی چیز میرے لیے اچھی ہے — اسے آسان کر دے۔ اگر بری ہے — اسے مجھ سے دور کر دے چاہے میں کتنی ہی شدت سے اس کی طرف بڑھ رہا ہوں۔"},
+  {n:83,cat:"guidance",label:"For Non-Muslim Loved Ones / غیر مسلم عزیز",text:"O Allah, the people I love who do not yet know You — open their hearts through Your light and mercy. Let me be a reason they come closer to You, not a reason they stay away.",urdu:"اے اللہ، جن سے میں محبت کرتا ہوں اور وہ ابھی تجھے نہیں جانتے — ان کے دل اپنے نور اور رحمت سے کھول دے۔ مجھے ان کے تیرے قریب آنے کا ذریعہ بنا، دور رہنے کا نہیں۔"},
+  {n:84,cat:"guidance",label:"Consistency After Ramadan / رمضان کے بعد",text:"Ya Rabb, do not let me drift away when Shawwal arrives. Carry the light of this month into the next eleven. Let Ramadan truly change me — not just for thirty days.",urdu:"یا رب، جب شوال آئے تو مجھے دور نہ ہونے دے۔ اس مہینے کا نور اگلے گیارہ مہینوں میں لے جا۔ رمضان مجھے سچ میں بدل دے — صرف تیس دنوں کے لیے نہیں۔"},
+  {n:85,cat:"guidance",label:"For Those Who Left the Deen / واپسی",text:"O Allah, those who walked away from Islam — perhaps because of pain or doubt — bring them back. Show them that You are not like the people who hurt them.",urdu:"اے اللہ، جنہوں نے اسلام سے منہ موڑ لیا — شاید تکلیف کی وجہ سے، شاید شک کی وجہ سے — انہیں واپس لا دے۔ انہیں دکھا کہ تو ان لوگوں جیسا نہیں جنہوں نے انہیں تکلیف دی۔"},
+  {n:86,cat:"guidance",label:"For Dreams and Aspirations / خواب",text:"Ya Allah, You placed certain dreams inside me. The desire to do something meaningful. Bless those aspirations if they are good. And give me the courage to pursue them.",urdu:"یا اللہ، تو نے میرے اندر کچھ خواب رکھے۔ کچھ بامعنی کرنے کی خواہش، دنیا کو بہتر چھوڑنے کی۔ اگر یہ آرزوئیں اچھی ہیں تو انہیں بابرکت کر دے۔ اور مجھے انہیں واقعی پورا کرنے کی ہمت دے۔"},
+  {n:87,cat:"guidance",label:"Protection from Misguidance / گمراہی سے بچاؤ",text:"O Allah, protect me from the Fitnah of this age — the confusion, haram made beautiful, erosion of values. Give me eyes to see through falsehood and courage to stand by truth.",urdu:"اے اللہ، مجھے اس دور کے فتنوں سے بچا — نظریات کا الجھاؤ، حرام کو خوبصورت بنا کر پیش کرنا، اقدار کا ختم ہونا۔ مجھے ایسی آنکھیں دے جو جھوٹ کے آر پار دیکھ سکیں اور ایسی ہمت جو تب بھی حق پر کھڑی رہے۔"},
+  {n:88,cat:"guidance",label:"For Muslim Parents / مسلمان والدین",text:"Ya Rabb, help every Muslim parent raising children in a world designed to make them forget You. Give them wisdom, patience, and tawfeeq to pass this deen on with love.",urdu:"یا رب، ہر اس مسلمان والدین کی مدد کر جو ایسی دنیا میں بچوں کی پرورش کر رہے ہیں جو انہیں تجھے بھلانے پر آمادہ کرتی ہے۔ انہیں حکمت، صبر اور وہ توفیق دے کہ اگلی نسل کو محبت سے یہ دین دے سکیں۔"},
+  {n:89,cat:"gratitude",label:"For the Gift of Islam / اسلام",text:"Ya Allah, I do not know what I did to deserve Islam. Out of all the people across all of history — You chose me to be Muslim. Thank You. I will spend my whole life being grateful and it will not be enough.",urdu:"یا اللہ، میں نہیں جانتا میں نے کیا کیا کہ اسلام ملا۔ پوری تاریخ کے تمام لوگوں میں — تو نے مجھے مسلمان چنا۔ شکریہ۔ میں ساری زندگی شکر ادا کرتا رہوں گا اور وہ بھی کافی نہ ہوگا۔"},
+  {n:90,cat:"gratitude",label:"For Health and Ability / صحت",text:"O Allah, I often forget to thank You for what I still have — my sight, my hearing, my ability to walk and think and feel. Tonight I say: Thank You. For every blessing I take for granted.",urdu:"اے اللہ، میں اکثر ان چیزوں کا شکر ادا کرنا بھول جاتا ہوں جو ابھی بھی میرے پاس ہیں — میری بینائی، سماعت، چلنے کی صلاحیت، سوچنے کی۔ آج رات رک کر کہتا ہوں: شکریہ۔"},
+  {n:91,cat:"gratitude",label:"For Ramadan / رمضان",text:"Ya Rabb, thank You for giving me another Ramadan. Not everyone who fasted with me last year is alive this year. I am still here. I made it to Laylatul Qadar. That is Your mercy.",urdu:"یا رب، ایک اور رمضان دینے کا شکریہ۔ جن سب نے میرے ساتھ پچھلے سال روزے رکھے وہ سب اس سال زندہ نہیں ہیں۔ میں ابھی ہوں۔ میں لیلۃ القدر تک پہنچا۔ یہ تیری رحمت ہے۔"},
+  {n:92,cat:"gratitude",label:"For Family and Love / خاندان اور محبت",text:"O Allah, thank You for the people in my life who love me. For family — imperfect as we are. For friendships that have lasted. For being held when I was falling.",urdu:"اے اللہ، میری زندگی میں جو لوگ مجھ سے محبت کرتے ہیں ان کے لیے شکریہ۔ خاندان کا شکریہ — ناقص ہونے کے باوجود۔ پائیدار دوستیوں کا شکریہ۔ جب میں گر رہا تھا تو تھامنے کا شکریہ۔"},
+  {n:93,cat:"gratitude",label:"For Every Test / ہر آزمائش",text:"Ya Allah, I want to thank You even for the hardships. Because every single time — You were there. I came out the other side. The tests were not punishment — they were tuition. Thank You.",urdu:"یا اللہ، مشکلوں کے لیے بھی شکر کرنا چاہتا ہوں۔ کیونکہ ہر بار — تو وہاں تھا۔ اور میں دوسری طرف نکل آیا۔ یہ آزمائشیں سزا نہیں تھیں — یہ سبق تھے۔ شکریہ۔"},
+  {n:94,cat:"gratitude",label:"For Rizq Received / ملا رزق",text:"O Allah, I have never gone to sleep truly hungry. I have always had a roof over my head. Thank You, Ya Razzaq. For every meal and every paycheck that came just in time.",urdu:"اے اللہ، میں نے کبھی سچ میں بھوکا سو کر نہیں اٹھا۔ میرے سر پر ہمیشہ چھت رہی۔ یا رزاق، شکریہ۔ ہر کھانے اور ہر تنخواہ کے لیے شکریہ جو وقت پر آ گئی۔"},
+  {n:95,cat:"gratitude",label:"For the Quran / قرآن",text:"Ya Allah, thank You for the Quran. For the fact that Your words are available to me in a book I can carry in my pocket. No nation in history had this access to the Word of God.",urdu:"یا اللہ، قرآن کے لیے شکریہ۔ اس بات کے لیے کہ تیرے کلام تک میری رسائی ہے — ایک کتاب میں جسے میں جیب میں رکھ سکتا ہوں۔ تاریخ میں کسی قوم کو خدا کے کلام تک یہ رسائی نہیں ملی۔"},
+  {n:96,cat:"gratitude",label:"For Prophet Muhammad ﷺ / نبی ﷺ",text:"O Allah, thank You for sending Muhammad ﷺ — a living example, a mercy to all worlds. Through him I know how to pray, how to love, how to die. He is the greatest gift after this deen itself.",urdu:"اے اللہ، محمد ﷺ کو بھیجنے کا شکریہ — ایک زندہ نمونہ، تمام جہانوں کے لیے رحمت۔ انہی کی وجہ سے جانتا ہوں کہ کیسے نماز پڑھوں، کیسے محبت کروں، کیسے مروں۔ وہ اس دین کے بعد سب سے بڑا تحفہ ہیں۔"},
+  {n:97,cat:"gratitude",label:"For Every Sunrise / ہر صبح",text:"Ya Rabb, every morning I open my eyes is a gift I did not earn. I could have died in my sleep. But I did not — because You did not allow it. Every sunrise is a new page. Thank You for every page.",urdu:"یا رب، ہر صبح جو میں آنکھ کھولتا ہوں وہ ایسا تحفہ ہے جو میں نے نہیں کمایا۔ نیند میں مر سکتا تھا۔ لیکن نہیں رکا — کیونکہ تو نے نہیں رکنے دیا۔ تو ہر صبح ایک نیا صفحہ میرے ہاتھ میں تھماتا ہے۔ ہر صفحے کے لیے شکریہ۔"},
+  {n:98,cat:"gratitude",label:"For This Very Night / اس رات کے لیے",text:"O Allah, thank You for this night. That I am alive on Laylatul Qadar. That I am awake, making du'a, my lips moving, my heart feeling, my eyes with tears. This moment is a gift.",urdu:"اے اللہ، اس رات کے لیے شکریہ۔ شکریہ کہ میں لیلۃ القدر پر زندہ ہوں۔ کہ میں جاگ رہا ہوں، دعا کر رہا ہوں۔ کہ میرے ہونٹ ہل سکتے ہیں، دل محسوس کر سکتا ہے اور ابھی میری آنکھوں میں آنسو ہیں۔ یہ لمحہ ایک تحفہ ہے۔"},
+  {n:99,cat:"gratitude",label:"For Your Mercy / تیری رحمت",text:"Ya Arham Ar-Rahimeen. Thank You for never giving up on me. For every time I turned away and You called me back. For every sin You covered. Your mercy is the only reason I am here tonight.",urdu:"یا ارحم الراحمین۔ شکریہ کہ تو نے کبھی مجھ سے ہار نہیں مانی۔ ہر بار جب میں نے منہ پھیرا اور تو نے آواز دی۔ ہر گناہ جو تو نے چھپایا۔ ہر دروازہ جو تو نے کھولا جب میں اندھیرے میں کھڑا تھا۔ تیری رحمت ہی واحد وجہ ہے کہ میں آج رات یہاں ہوں۔"},
+  {n:100,cat:"gratitude",label:"The Final Dua — آخری دعا",text:"Ya Allah, I have reached the end of my 100 duas and I am still not done asking — because You are Al-Wahhaab and there is no end to what You can give. Accept everything I asked tonight. Everything I forgot to ask — give it to me anyway. Accept this night from me. Accept me. Ameen, Ya Rabb Al-Alameen.",urdu:"یا اللہ، میں اپنی سو دعاؤں کے آخر تک پہنچ گیا ہوں اور پھر بھی مانگنا ختم نہیں ہوا — کیونکہ تو الوہاب ہے اور جو تو دے سکتا ہے اس کی کوئی حد نہیں۔ آج رات جو کچھ میں نے مانگا وہ سب قبول کر لے۔ جو مانگنا بھول گیا — وہ بھی دے دے۔ یہ رات مجھ سے قبول فرما۔ مجھے قبول فرما۔ آمین، یا رب العالمین۔"},
+];
+
+let currentCat='all', currentSearch='';
+const catLabels={forgiveness:'Forgiveness',heart:'Heart & Soul',family:'Family',dunya:'This World',akhirah:'Hereafter',health:'Health',guidance:'Guidance',gratitude:'Gratitude'};
+
+function render(){
+  const q=currentSearch.toLowerCase();
+  const filtered=duas.filter(d=>{
+    const catOk=currentCat==='all'||d.cat===currentCat;
+    const searchOk=!q||d.text.toLowerCase().includes(q)||d.label.toLowerCase().includes(q)||d.urdu.includes(currentSearch)||String(d.n).includes(q);
+    return catOk&&searchOk;
+  });
+  document.getElementById('counter').textContent=filtered.length===100?'Showing all 100 duas':`Showing ${filtered.length} of 100 duas`;
+  const grid=document.getElementById('duasGrid');
+  if(!filtered.length){grid.innerHTML='<div class="empty-state">No duas found. Try a different search or category.</div>';return;}
+  grid.innerHTML=filtered.map(d=>`
+    <div class="dua-card">
+      <div class="dua-top">
+        <div class="dua-num">${d.n}</div>
+        <div class="dua-body">
+          <div class="dua-meta">
+            <span class="dua-cat cat-${d.cat}">${catLabels[d.cat]}</span>
+            <span class="dua-label">${d.label}</span>
+          </div>
+          <div class="dua-text">"${d.text}"</div>
+          <div class="dua-urdu">${d.urdu}</div>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function filterCat(cat,btn){
+  currentCat=cat;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+function searchDuas(val){currentSearch=val;render();}
+render();
+</script>
+</body>
+</html>
